@@ -1,0 +1,26 @@
+<h3>update-customer</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Id</label>
+            <input type="text" class="form-control" id="id" required [(ngModel)]="customer.id" name="id">
+        </div>
+    
+        <div class="form-group">
+            <label for="name">Student Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">
+        </div>
+    
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input type="text" class="form-control" id="email" required [(ngModel)]="customer.email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Mobile Number</label>
+            <input type="text" class="form-control" id="mob" required [(ngModel)]="customer.mob" name="mob">
+        </div>
+    
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

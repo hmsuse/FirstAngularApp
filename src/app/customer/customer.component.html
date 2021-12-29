@@ -1,0 +1,26 @@
+<p>customer works!</p>
+
+<div class="btn btn-primary">save</div>
+<div class="bg bg-primary">
+    <div class="card-header">
+        Products
+    </div>
+    <div>
+        contents to be appear
+        
+    </div>
+</div>
+<table border="2">
+    <tr>
+        <th>custNo</th>
+   
+        <th>custName</th>
+    
+        <th>country</th>
+    </tr>
+    <tr *ngFor="let customer of customers">
+        <td>{{customer.custNo}}</td>
+        <td>{{customer.custName}}</td>
+        <td>{{customer.country}}</td>
+    </tr>
+</table>
